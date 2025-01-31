@@ -17,9 +17,20 @@ const routes: Array<RouteRecordRaw> = [
       import(/* webpackChunkName: "about" */ "../views/tlias/AboutView.vue"),
   },
   {
-    path: "/1",
+    path: "/hostPage",
     name: "主页",
-    component: () => import(/* webpackChunkName: "about" */ "../views/tlias/AboutView.vue"),
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/tlias/HostPage.vue"),
+  },
+  {
+    path: "/dataTable",
+    name: "表格",
+    component: () => import("../views/tlias/DataTable.vue"),
+  },
+  {
+    path: "/customerView",
+    name: "客户管理",
+    component: () => import("../views/tlias/CustomerView.vue"),
   },
 ];
 

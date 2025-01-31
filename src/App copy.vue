@@ -3,9 +3,9 @@
     <el-container>
       <el-header style="text-align: center">千风汽修</el-header>
       <el-container>
-        <el-aside style="width: 280px; height: auto">
+        <el-aside style="width: 500px; height: auto; margin-right: 10px">
           <el-row class="tac">
-            <el-col :span="18">
+            <el-col :span="10">
               <h5 class="mb-2">选项</h5>
               <el-menu
                 default-active="1"

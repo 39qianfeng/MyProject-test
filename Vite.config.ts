@@ -15,4 +15,13 @@ export default defineConfig({
       resolvers: [ElementPlusResolver()],
     }),
   ],
+  // 服务代理
+  server: {
+    proxy: {
+      "/api": {
+        target: "http://localhost:8080/api",
+        changeOrigin: true,
+      },
+    },
+  },
 });
